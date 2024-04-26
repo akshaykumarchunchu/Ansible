@@ -1,0 +1,14 @@
+- name: Play 1
+  hosts: localhost
+  tasks: 
+  - name: Play-1 and task 1
+    ansible.builtin.debug:
+      message: "I Love DevOps in play-1"
+
+
+- name: Play 2
+  hosts: localhost
+  tasks: 
+  - name: Play-2 and task 1
+    ansible.builtin.debug:
+      message: "I Love DevOps play-2"
