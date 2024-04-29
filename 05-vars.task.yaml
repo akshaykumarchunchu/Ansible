@@ -1,0 +1,16 @@
+- name: vars and task
+  hosts: web
+  vars:
+    course: Teraform
+    trainer: siva
+    duration: 120hrs
+  tasks:
+  - name: print override teraform
+    vars:
+      course: Devops
+    ansible.builtin.debug:
+      msg:  "I'm very much passionate to learn {{course}} from trainer {{trainer}} duration {{duration}}."
+
+  - name: Ansible
+    ansible.builtin.debug:
+      msg:  "I'm very much passionate to learn {{course}} from trainer {{trainer}} duration {{duration}}."
