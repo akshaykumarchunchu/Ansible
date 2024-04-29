@@ -12,5 +12,7 @@
       msg:  "I'm very much passionate to learn {{course}} from trainer {{trainer}} duration {{duration}}."
 
   - name: Ansible
+    vars:
+      course: kubernates
     ansible.builtin.debug:
       msg:  "I'm very much passionate to learn {{course}} from trainer {{trainer}} duration {{duration}}."
