@@ -1,8 +1,8 @@
-name: "Variables files"
-hosts: localhost
-vars-file:
-- vars.yaml
-tasks:
+- name: Variables files
+  hosts: localhost
+  vars_file:
+  - vars.yaml
+  tasks:
   - name: print subject
     ansible.builtin.debug:
-      msg:  "I'm very much passionate to learn {{course}} from trainer {{trainer}} duration {{duration}}."
+      msg: "I'm very much passionate to learn {{course}} from trainer {{trainer}} duration {{duration}}."
