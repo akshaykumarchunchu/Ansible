@@ -12,7 +12,7 @@
       msg:  "I'm very much passionate to learn {{course}} from trainer {{trainer}} duration {{duration}}."
 
   - name: print override kubernates
-    vars:
+    vars: #taks level variables wont effect on main play variables
       course: kubernates
     ansible.builtin.debug:
       msg:  "I'm very much passionate to learn {{course}} from trainer {{trainer}} duration {{duration}}."
