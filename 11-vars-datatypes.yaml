@@ -1,6 +1,16 @@
-- name: variables from inventory
+- name: data types
   hosts: localhost
+  vars:
+    course: Devops with Aws #string
+    Tools: #list
+    - linux
+    - Shell
+    - Ansible
+    Experience: #map or dictionary
+      DevOps: 3 #number
+      AWS: 2
+      Docker: 1
   tasks: 
-  - name: get from arugments
+  - name: print the variables
     ansible.builtin.debug:
-      msg: "Hi {{PERSON}} good {{WISHES}}."
+      msg: "Course: {{course}} Tools: {{Tools}}, Experience is: {{Experience}}."
