@@ -2,8 +2,8 @@
   hosts: web
   vars_prompt: #prompt are always considered as text/string
   - name: number
-      prompt: please enter the value
-      private: no
+    prompt: please enter the value
+    private: no
   task:
   - name: number is less then 10
     ansible.builtin.debug:
