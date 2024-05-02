@@ -5,6 +5,7 @@
     ansible.builtin.debug:
       msg: "Hello {{course | default('Ansible') }}"
 
+
 - name: upper case
   hosts: localhost
   vars:
@@ -13,6 +14,7 @@
   - name: convert into upper case
     ansible.builtin.debug:
       msg: "{{ greeting | lower }}"
+
 
 - name: lower case
   hosts: localhost
@@ -23,6 +25,7 @@
     ansible.builtin.debug:
       msg: "{{ greeting | upper }}"
 
+
 - name: remove duplicates
   hosts: localhost
   vars:
@@ -32,6 +35,7 @@
     ansible.builtin.debug:
       msg: "{{ numbers | unique }}"
 
+
 - name: print min and max ages
   hosts: localhost
   vars:
@@ -40,6 +44,7 @@
   - name: print min and max
     ansible.builtin.debug:
       msg: "min ages: {{ ages | min }} and max ages: {{ ages | max }}"
+
 
 - name: convert dictionary into items/list
   hosts: localhost
@@ -71,3 +76,4 @@
   - name: convert items to dictionary
     ansible.builtin.debug:
       msg: "After converting: {{ my_list | items2dict }}"
+
