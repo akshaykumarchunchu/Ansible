@@ -1,6 +1,6 @@
 - name: dafult value
-hosts: localhost
-tasks:
-- name: print dafult value 
-  ansible.builtin.debug:
-    msg: "Hello {{course}}"
+  hosts: localhost
+  tasks:
+  - name: print dafult value 
+    ansible.builtin.debug:
+      msg: "Hello {{course}}"
