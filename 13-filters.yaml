@@ -13,4 +13,21 @@
   - name: convert into upper case
     ansible.builtin.debug:
       msg: "{{ greeting | lower }}"
-      
+
+- name: lower case
+  hosts: localhost
+  vars:
+    greeting: "Hello Good mroning"
+  tasks:
+  - name: convert into lower case
+    ansible.builtin.debug:
+      msg: "{{ greeting | upper }}"
+
+- name: remove duplicates
+  hosts: localhost
+  vars:
+    numbers: [ 1,2,2,3,4,4,5 ]
+  tasks:
+  - name: remove duplicates
+    ansible.builtin.debug:
+      msg: "{{ numbers | unique }}"
