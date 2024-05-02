@@ -61,9 +61,9 @@
   hosts: localhost
   vars:
     my_list:
-      course: Ansible
-      trainer: siva
-      duration: 120hrs
+    - {'key': 'course', 'value': 'Ansible'}
+    - {'key': 'trainer', 'value': 'siva'}
+    - {'key': 'duration', 'value': '120hrs'}
   tasks: 
   - name: convert items to dictionary
     ansible.builtin.debug:
